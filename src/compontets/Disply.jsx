@@ -2,12 +2,14 @@ import { useContext } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { imagesPass } from "./Main";
+import { useNavigate } from "react-router-dom";
 
 function Disply() {
   const { data } = useContext(imagesPass);
   const Data1 = data.filter((item) => item.Category === "MOVIES");
   const Data2 = data.filter((item) => item.Category === "SERIES");
   const Data3 = data.filter((item) => item.Category === "MUSIC");
+  const nav=useNavigate();
   return (
     <>
       <Tabs
@@ -24,13 +26,14 @@ function Disply() {
             {Data1.map((item) => (
               <div
                 className="container "
-                style={{ width: "400px", height: "auto" }}
+                style={{ width: "400px", height: "auto" }}                
               >
                 <img
                   src={item.Thumbnail}
                   alt="Thumbnil"
                   width={"100%"}
                   height={"90%"}
+                  onClick={()=>nav(`/show/${item.id}`)}
                 />
 
                 <div class="d-flex flex-row bd-highlight mb-0 p-0">

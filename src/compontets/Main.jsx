@@ -3,6 +3,8 @@ import Navbar from './Navbar'
 import Disply from './Disply'
 import Footer from "./Footer";
 import { AllDatas } from "./Datas";
+import Showvideo from "./Showvideo";
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
 
 
 export const imagesPass=createContext()
@@ -11,9 +13,17 @@ const Main = () => {
   return (
     <div>
       <imagesPass.Provider  value={{data,SetData}}>
-        <Navbar/>
-       <Disply/>
-       <Footer/>
+         <Navbar/>
+        <BrowserRouter>
+        <Routes>
+         <Route path="/" element={<Disply/>} />
+         <Route path="/show/:id" element={<Showvideo/>} />
+        </Routes>
+        </BrowserRouter>
+        <Footer/>
+
+      {/* <Disply/>
+       <Showvideo/> */}
       </imagesPass.Provider>      
     </div>
   )

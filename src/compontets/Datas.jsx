@@ -53,7 +53,7 @@ export const AllDatas=[
         id:6,
         ProFile:'https://yt3.ggpht.com/aG3Uj0IXBrfn1QMU632hpRr3bnlpld8xf7Nes4qjYvHi1zbKli4cnV4imFV1kI_ZeEJncL9U=s88-c-k-c0x00ffffff-no-rj',
         Thumbnail:'https://i.ytimg.com/vi/dWWchBGyNSI/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCz-dFvQ3nk64XD3N28ppOswnKmFg',
-        ChannelName:'',
+        ChannelName:'Ultra Movie',
         VideoViews:'6.2M',
         UplodDate:'5 months',
         VideoTitle:'KEEDAM 4K | Superhit',

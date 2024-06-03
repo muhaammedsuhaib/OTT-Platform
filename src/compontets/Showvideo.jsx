@@ -18,7 +18,7 @@ const Showvideo = () => {
             <div className='container-sm'>
                 <div className="row">
                     <div className="col-sm-8">
-                    <video src={videoFile} autoPlay controls width={'100%'} style={{borderRadius:'10px'}}></video>
+                    <video src='https://d37k2xr5luyyu3.cloudfront.net/preview/164292.hd1.mp4' autoPlay controls width={'100%'} style={{borderRadius:'10px'}}></video>
                     <div className="container">
                       <div className="row">
                         <div className="col-sm-12">
